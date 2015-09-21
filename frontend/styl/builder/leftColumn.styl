@@ -2,11 +2,11 @@
   @extend $hiddenScrollbar
 
   position: fixed
-  top: $HeaderHeight + $StandardPadding
-  bottom: $StandardPadding
+  top: $HeaderHeight + 1
+  bottom: 0
   margin-right: $StandardPadding
-  width: 260px
-  overflow: scroll
+  width: 290px - 1
+  overflow-y: scroll
   transition: top $TransitionDuration
 
   .toggle {
@@ -70,6 +70,7 @@
 
 .leftColumn-options {
   padding: 0 24px 12px
+  padding-bottom: $StandardPadding
   background: $White
 }
 
